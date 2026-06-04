@@ -1,0 +1,664 @@
+```html
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Wiadomość od Tycu</title>
+
+<style>
+:root{
+    --bg:#09090b;
+    --card:#111114;
+    --card2:#15151a;
+    --border:#232328;
+    --text:#f5f5f5;
+    --muted:#a1a1aa;
+    --accent:#ffffff;
+    --blue:#3b82f6;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    background:
+        radial-gradient(circle at top, #1f1f29 0, #09090b 42%),
+        var(--bg);
+    color:var(--text);
+    font-family:Inter,Segoe UI,Arial,sans-serif;
+    line-height:1.8;
+}
+
+.container{
+    max-width:900px;
+    margin:0 auto;
+    padding:80px 24px;
+}
+
+.hero{
+    margin-bottom:60px;
+}
+
+.badge{
+    display:inline-block;
+    padding:8px 14px;
+    border:1px solid var(--border);
+    border-radius:999px;
+    color:var(--muted);
+    margin-bottom:24px;
+    background:rgba(255,255,255,0.03);
+}
+
+h1{
+    font-size:clamp(42px,7vw,76px);
+    line-height:1;
+    margin:0 0 24px;
+    letter-spacing:-0.05em;
+}
+
+.lead{
+    color:var(--muted);
+    font-size:1.15rem;
+    max-width:760px;
+}
+
+.card{
+    background:linear-gradient(180deg,var(--card),var(--card2));
+    border:1px solid var(--border);
+    border-radius:22px;
+    padding:34px;
+    margin-bottom:22px;
+    box-shadow:0 18px 60px rgba(0,0,0,0.22);
+}
+
+.card h2{
+    margin-top:0;
+    margin-bottom:20px;
+    font-size:1.75rem;
+    letter-spacing:-0.03em;
+}
+
+.card p{
+    margin:0 0 16px;
+}
+
+.card p:last-child{
+    margin-bottom:0;
+}
+
+.notice{
+    border:1px solid rgba(59,130,246,0.65);
+    background:rgba(59,130,246,0.10);
+    border-radius:18px;
+    padding:22px;
+    margin:22px 0;
+}
+
+.notice p{
+    margin-bottom:14px;
+}
+
+.notice p:last-child{
+    margin-bottom:0;
+}
+
+ul{
+    margin:0;
+    padding-left:22px;
+}
+
+li{
+    margin-bottom:8px;
+    color:var(--muted);
+}
+
+.discord{
+    display:inline-block;
+    background:white;
+    color:black;
+    padding:12px 18px;
+    border-radius:12px;
+    font-weight:700;
+    margin-top:8px;
+}
+
+footer{
+    margin-top:40px;
+    color:var(--muted);
+    text-align:center;
+    font-size:0.95rem;
+}
+
+@media(max-width:640px){
+    .container{
+        padding:44px 18px;
+    }
+
+    .card{
+        padding:24px;
+        border-radius:18px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="hero">
+        <div class="badge">Wiadomość od Tycu</div>
+
+        <h1>Moja strona tej historii.</h1>
+
+        <p class="lead">
+            Jeżeli trafiłeś na tę stronę, prawdopodobnie szukasz informacji
+            o tym, dlaczego serwer został wyłączony i co właściwie wydarzyło się
+            w ostatnich dniach.
+        </p>
+    </div>
+
+    <section class="card">
+        <h2>Cześć.</h2>
+
+        <p>
+            Postanowiłem przygotować to miejsce, ponieważ po moim odejściu pojawiło się wiele
+            komentarzy, oskarżeń oraz jednostronnych relacji dotyczących zarówno mnie,
+            jak i projektu, nad którym pracowałem przez ostatnie lata.
+        </p>
+
+        <p>
+            Nie oczekuję, że każdy zgodzi się z moją opinią.
+        </p>
+
+        <p>
+            Chciałbym jedynie, aby każdy miał możliwość poznania również mojej strony
+            całej tej historii.
+        </p>
+
+        <p>
+            Ta strona będzie stopniowo aktualizowana i uzupełniana o dodatkowe informacje
+            pozwalające każdemu samodzielnie wyciągnąć własne wnioski.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>Dlaczego serwer jest offline?</h2>
+
+        <p>
+            Serwer został przeze mnie wyłączony świadomie.
+        </p>
+
+        <p>
+            Powód jest bardzo prosty.
+        </p>
+
+        <p>
+            Nie chciałem pozostawiać osobom trzecim projektu, nad którym pracowałem
+            przez co najmniej dwa lata i któremu poświęciłem ogromną ilość swojego czasu.
+        </p>
+
+        <p>
+            Od początku chciałem stworzyć miejsce, gdzie ludzie mogliby po prostu
+            wspólnie pograć, dobrze się bawić i budować coś razem.
+        </p>
+
+        <p>
+            Przez ten czas powstały setki poprawek, skryptów, systemów, konfiguracji
+            i rozwiązań technicznych, które przygotowywałem często po nocach,
+            kosztem własnego czasu wolnego.
+        </p>
+
+        <p>
+            Nie była to decyzja wymierzona w graczy.
+        </p>
+
+        <p>
+            Była to decyzja dotycząca projektu, nad którym spędziłem bardzo dużą część
+            swojego życia.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>Co stało się z plikami?</h2>
+
+        <p>
+            Pliki serwera znajdują się obecnie dokładnie w takim samym stanie,
+            w jakim znajdowały się w dniu wyłączenia serwera.
+        </p>
+
+        <p>
+            Warto również wyjaśnić jedną rzecz.
+        </p>
+
+        <p>
+            Sam silnik oraz znaczna część kodu źródłowego opierają się na pracy twórców
+            projektu OpenTibiaBR oraz społeczności open source.
+        </p>
+
+        <p>
+            Przez lata zajmowałem się jednak rozwijaniem tego projektu, pisaniem własnych
+            rozwiązań, poprawianiem błędów, administracją, konfiguracją, optymalizacją
+            oraz przygotowywaniem zawartości dla graczy.
+        </p>
+
+        <p>
+            Były to miesiące, a w praktyce lata pracy.
+        </p>
+
+        <p>
+            Nie zamierzam udawać, że stworzyłem wszystko samodzielnie.
+        </p>
+
+        <p>
+            Nie zamierzam też udawać, że nie poświęciłem na ten projekt ogromnej ilości czasu.
+        </p>
+
+        <p>
+            Obie te rzeczy są prawdziwe jednocześnie.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>Co stało się z kontami i postaciami?</h2>
+
+        <p>
+            Konta graczy, postacie oraz dane zapisane w bazie danych nie zostały usunięte.
+        </p>
+
+        <p>
+            Wszystkie dane pozostają zachowane dokładnie w takim stanie, w jakim znajdowały się
+            w dniu <strong>03.06.2026</strong>, czyli w momencie wyłączenia serwera.
+        </p>
+
+        <p>
+            Nie zostały skasowane postacie.
+        </p>
+
+        <p>
+            Nie została usunięta baza danych.
+        </p>
+
+        <p>
+            Nie został utracony progres graczy.
+        </p>
+    </section>
+
+    <section class="card" id="dane-osobowe">
+        <h2>Dane kont graczy i prywatność</h2>
+
+        <p>
+            Chcę również jasno wyjaśnić temat danych kont graczy. Dane zapisane w bazie serwera,
+            takie jak konta, postacie, adresy e-mail, dane techniczne oraz informacje potrzebne
+            do działania kont, nie zostały opublikowane ani przekazane osobom trzecim.
+        </p>
+
+        <p>
+            Dane te były zbierane wyłącznie w celu umożliwienia założenia konta, logowania,
+            korzystania z serwera oraz zachowania postępu graczy.
+        </p>
+
+        <p>
+            Hasła użytkowników nie są przechowywane w formie jawnej. Są zabezpieczone mechanizmem
+            szyfrowania lub haszowania stosowanym przez system kont.
+        </p>
+
+        <p>
+            Nie zamierzam publikować żadnych zrzutów bazy danych, adresów e-mail, adresów IP,
+            haseł, hashy haseł, tokenów, logów ani innych informacji, które mogłyby pozwalać
+            na identyfikację graczy lub naruszać ich prywatność.
+        </p>
+
+        <p>
+            Mam świadomość, że dane tego rodzaju mogą podlegać ochronie na podstawie przepisów
+            o ochronie danych osobowych. Dlatego dostęp do nich pozostaje ograniczony, a wszelkie
+            pytania dotyczące danych kont można kierować do mnie bezpośrednio.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>Finansowanie serwera i wsparcie społeczności</h2>
+
+        <p>
+            Jedną z rzeczy, które chciałbym wyjaśnić już na początku, jest temat pieniędzy
+            i utrzymania serwera.
+        </p>
+
+        <p>
+            Od samego początku byłem przekonany, że środki ze sklepu, donate'ów oraz wszelkiego
+            wsparcia od graczy mają służyć przede wszystkim utrzymaniu serwera i dalszemu rozwojowi
+            projektu. Tak było to przedstawiane społeczności i tak rozumiała to większość osób,
+            które wspierały serwer.
+        </p>
+
+        <p>
+            Z czasem pojawił się jednak pomysł, aby część tych środków nie była przeznaczana
+            wyłącznie na utrzymanie projektu.
+        </p>
+
+        <p>
+            Nie był to mój pomysł.
+        </p>
+
+        <p>
+            Ja od początku mówiłem wprost, że nie siedzę nad tym projektem dla pieniędzy.
+        </p>
+
+        <p>
+            Spędzałem nad nim noce, pisałem skrypty, poprawiałem błędy, zajmowałem się administracją
+            i rozwojem dlatego, że chciałem stworzyć fajne miejsce do gry.
+        </p>
+
+        <p>
+            Sam miałem zamiar na tym serwerze grać razem z innymi ludźmi.
+        </p>
+
+        <p>
+            Pomysł wyciągania z tego dodatkowych pieniędzy nie wyszedł ode mnie.
+        </p>
+
+        <p>
+            Wręcz przeciwnie — temat pieniędzy i ewentualnego podziału środków był jedną z rzeczy,
+            w których od początku miałem inne podejście.
+        </p>
+
+        <p>
+            Ja chciałem tworzyć projekt dla graczy i dla samej przyjemności rozwijania go,
+            a nie traktować go jako źródło zarobku.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>O zarzutach o „kradzież”</h2>
+
+        <p>
+            Po całej sytuacji zostałem publicznie nazwany złodziejem i oskarżony o kradzież serwera.
+        </p>
+
+        <p>
+            Nie zgadzam się z tym określeniem.
+        </p>
+
+        <p>
+            Nie ukradłem postaci graczy.
+        </p>
+
+        <p>
+            Nie usunąłem ich danych.
+        </p>
+
+        <p>
+            Nie usunąłem baz danych.
+        </p>
+
+        <p>
+            Nie zniszczyłem efektów pracy społeczności.
+        </p>
+
+        <p>
+            Serwer został wyłączony, ale wszystkie dane zostały zachowane dokładnie w takim stanie,
+            w jakim znajdowały się w dniu wyłączenia.
+        </p>
+
+        <p>
+            Jednocześnie nie zamierzam zostawiać efektów kilku lat swojej pracy osobom, które mogłyby
+            w przyszłości wykorzystywać ją do dalszej monetyzacji.
+        </p>
+
+        <p>
+            To właśnie ten aspekt był dla mnie jednym z najważniejszych powodów podjęcia tej decyzji.
+        </p>
+
+        <p>
+            Przez ostatnie lata poświęciłem temu projektowi ogromną ilość swojego wolnego czasu.
+            Pisałem skrypty, poprawiałem błędy, rozwijałem systemy, zajmowałem się administracją
+            i przygotowywałem serwer do działania często po nocach, po pracy lub kosztem własnego czasu wolnego.
+        </p>
+
+        <p>
+            Nie chciałem sytuacji, w której projekt, nad którym pracowałem przez lata, zostałby przekazany dalej
+            i ostatecznie stał się kolejnym sposobem na [...]
+            Zwłaszcza że sam od początku nie tworzyłem go z myślą o zarobku.
+        </p>
+
+        <p>
+            Każdy może sam ocenić, czy zachowanie kontroli nad projektem, nad którym pracowałem przez lata,
+            jest kradzieżą.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>Co dalej z serwerem?</h2>
+
+        <p>
+            Chcę również wyjaśnić temat dalszych losów projektu.
+        </p>
+
+        <p>
+            Po wyłączeniu serwera odezwało się do mnie wiele osób, które poświęciły
+            tej grze dużo czasu i pytały o możliwość dalszego funkcjonowania projektu.
+        </p>
+
+        <p>
+            To właśnie reakcje graczy sprawiły, że zacząłem rozważać różne scenariusze
+            dotyczące przyszłości serwera.
+        </p>
+
+        <p>
+            Nie była to decyzja planowana wcześniej.
+        </p>
+
+        <div class="notice">
+            <p>
+                <strong>
+                    Jednocześnie pojawiły się publiczne sugestie dotyczące rzekomych
+                    backdoorów, ukrytych funkcji lub działań na szkodę projektu.
+                </strong>
+            </p>
+
+            <p>
+                <strong>Stanowczo zaprzeczam tym zarzutom.</strong>
+            </p>
+
+            <p>
+                <strong>
+                    Nigdy nie dodawałem do serwera żadnych backdoorów, ukrytych mechanizmów
+                    ani funkcji mających szkodzić graczom lub przejmować kontrolę nad projektem.
+                </strong>
+            </p>
+
+            <p>
+                <strong>
+                    Zarzuty tego rodzaju nie zostały przedstawione wraz z dowodami i są
+                    niezgodne z moją wiedzą oraz sposobem, w jaki przez lata pracowałem
+                    przy tym projekcie.
+                </strong>
+            </p>
+
+            <p>
+                <strong>
+                    Sugestie, że kiedykolwiek przygotowywałem podobne rozwiązania lub planowałem
+                    działać na szkodę graczy, uważam za całkowicie bezpodstawne.
+                </strong>
+            </p>
+        </div>
+
+        <p>
+            Przez długi czas rozwijałem ten serwer, poprawiałem błędy, pisałem
+            skrypty oraz zajmowałem się jego utrzymaniem. Nie miałbym żadnego
+            powodu, aby celowo szkodzić projektowi lub graczom.
+        </p>
+
+        <p>
+            Jeżeli projekt będzie w przyszłości kontynuowany, będzie to wynikało
+            wyłącznie z chęci zachowania efektów pracy graczy i osób, które poświęciły
+            temu serwerowi swój czas.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>Dlaczego odszedłem?</h2>
+
+        <p>
+            Chciałbym też wyjaśnić jedną rzecz.
+        </p>
+
+        <p>
+            Nie odszedłem wyłącznie od serwera Tibia.
+        </p>
+
+        <p>
+            Odszedłem z całej społeczności.
+        </p>
+
+        <p>
+            Serwer Tibia był tylko jednym z elementów większej społeczności tworzonej przez lata
+            wokół streamów, Discorda i różnych projektów.
+        </p>
+
+        <p>
+            Moja decyzja nie była wynikiem jednej kłótni, jednego bana czy jednego wieczoru.
+        </p>
+
+        <p>
+            Była efektem wielu sytuacji, które zbierały się przez bardzo długi czas.
+        </p>
+
+        <p>
+            Co ciekawe, nie jestem pierwszą osobą, która odeszła.
+        </p>
+
+        <p>
+            Przez lata wiele osób ze starego składu, ludzi którzy współtworzyli tę społeczność od początku,
+            stopniowo się wycofywało albo całkowicie odchodziło.
+        </p>
+
+        <p>
+            W tamtym czasie nie zastanawiałem się nad tym szczególnie mocno.
+        </p>
+
+        <p>
+            Dzisiaj patrzę na to inaczej.
+        </p>
+
+        <p>
+            To właśnie dlatego dziś dużo lepiej rozumiem, dlaczego osoby, które kiedyś były bardzo blisko
+            tej społeczności, z czasem zaczęły się od niej odcinać.
+        </p>
+
+        <p>
+            Nie mam tutaj na myśli wyłącznie zwykłych widzów czy graczy.
+        </p>
+
+        <p>
+            Na przestrzeni lat odchodziły również osoby, które przez długi czas należały do najbliższego
+            otoczenia [...], współtworzyły społeczność lub utrzymywały z nim prywatne relacje.
+        </p>
+
+        <p>
+            Przez długi czas nie zastanawiałem się nad powodami tych odejść.
+        </p>
+
+        <p>
+            Dzisiaj patrzę na to zupełnie inaczej.
+        </p>
+
+        <p>
+            Wiem również, że część z tych osób ma własne powody swojej decyzji i własne doświadczenia
+            związane z tą społecznością. Nie zamierzam wypowiadać się za nich ani przedstawiać ich historii
+            jako swoich.
+        </p>
+
+        <p>
+            Jeżeli jednak osoby te wyrażą zgodę, ich perspektywa również zostanie przedstawiona.
+        </p>
+
+        <p>
+            Niektóre z tych osób posiadają również własne doświadczenia związane zarówno
+            z funkcjonowaniem społeczności, jak i z samym [...].
+        </p>
+
+        <p>
+            Jednocześnie zauważyłem, że od momentu mojego odejścia zamiast rzeczowej dyskusji
+            o przedstawionych przeze mnie problemach zaczęły pojawiać się publiczne komentarze
+            dotyczące mojego charakteru, emocji czy rzekomej niestabilności psychicznej.
+        </p>
+
+        <p>
+            Każdy ma prawo wyrobić sobie własną opinię na mój temat.
+        </p>
+
+        <p>
+            Uważam jednak, że próby sprowadzania całej sytuacji do mojego charakteru, emocji
+            czy rzekomej niestabilności psychicznej odwracają uwagę od faktycznych problemów
+            i pytań, które poruszam.
+        </p>
+
+        <p>
+            Dlatego zamiast prowadzić dyskusję na poziomie wzajemnych oskarżeń, postaram się
+            przedstawiać swoje stanowisko i pozwolić każdemu samodzielnie ocenić, jak wyglądała rzeczywistość.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>Co pojawi się dalej?</h2>
+
+        <p>
+            Ta strona nie powstała po to, żeby kogokolwiek przekonywać na siłę.
+        </p>
+
+        <p>
+            Powstała dlatego, że do tej pory publicznie przedstawiana była głównie jedna wersja wydarzeń.
+        </p>
+
+        <p>
+            W kolejnych aktualizacjach będą pojawiały się między innymi:
+        </p>
+
+        <ul>
+            <li>chronologia wydarzeń prowadzących do mojego odejścia,</li>
+            <li>moja perspektywa dotycząca sytuacji z [...],</li>
+            <li>materiały dotyczące finansowania projektów, donate'ów oraz utrzymania serwerów,</li>
+            <li>historia mojej współpracy z [...],</li>
+            <li>wyjaśnienie powodów, dla których wiele osób ze starego składu opuściło społeczność,</li>
+            <li>odpowiedzi na publiczne zarzuty kierowane pod moim adresem.</li>
+        </ul>
+
+        <p style="margin-top:16px;">
+            Nie oczekuję, że ktokolwiek uwierzy mi na słowo.
+        </p>
+
+        <p>
+            Chciałbym jedynie, aby każdy miał możliwość poznania również drugiej strony tej historii
+            i samodzielnego wyciągnięcia własnych wniosków.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>Kontakt</h2>
+
+        <p>
+            Jeżeli ktoś chce porozmawiać, zadać pytania lub ma własną perspektywę dotyczącą
+            opisanych wydarzeń, może skontaktować się ze mną bezpośrednio.
+        </p>
+
+        <div class="discord">Discord: _tycu</div>
+    </section>
+
+    <footer>
+        Dalsze materiały będą publikowane na tej stronie.
+    </footer>
+
+</div>
+
+</body>
+</html>
+```
